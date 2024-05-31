@@ -1,0 +1,7 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /blogs/{blogId} {
+      allow read, write: if true; // Allow read and write access to all documents
+    }
+  }
+}
