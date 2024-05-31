@@ -3,7 +3,7 @@ import Card from "../components/Card";
 
 export default async function AboutPage() {
   const getProd = async () => {
-    const res = await fetch("http://localhost:3000/api?a=get&q=product", {
+    const res = await fetch("blogtask-n3fkvi255-vivvidcodes-projects.vercel.app/api?a=get&q=product", {
       next: { revalidate: 10 },
     });
     const data = await res.json();
