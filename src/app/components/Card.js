@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Card({ product }) {
   return (
-    <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mb-10">
+    <div className="flex flex-col justify-between max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mb-10">
       <div
         className="bg-cover bg-center h-56 p-4"
         style={{ backgroundImage: `url(${product.images[0]})` }}
@@ -58,9 +58,6 @@ export default function Card({ product }) {
         </div>
       </div>
       <div className="px-4 pt-3 pb-4 bg-gray-100">
-       
-    
-          <div className="m-2 space-y-2">
         <div
           className="group flex flex-col rounded-lg  text-myblack border"
           tabIndex="1"
@@ -91,6 +88,6 @@ export default function Card({ product }) {
       </div>
         </div>
       </div>
-    </div>
+  
   );
 }

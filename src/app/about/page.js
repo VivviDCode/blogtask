@@ -8,7 +8,7 @@ export default async function AboutPage() {
     });
     const data = await res.json();
     return data;
-  };
+  }; 
 
   const data = await getProd();
   return (
