@@ -16,8 +16,8 @@ export default function Card({ product }) {
             className="h-10 w-10 rounded-full border-2 border-white"
             src={product.thumbnail}
             alt={product.title}
-            height={500}
-            width={500}
+            height={200}
+            width={200}
            loading="lazy"
           />
         </div>
@@ -70,8 +70,8 @@ export default function Card({ product }) {
             Reviews
             </h3>
             <div className="rotate-0">
-            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
       </svg>
             </div>
           </div>
