@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import Card from "../components/Card";
 
 export default async function AboutPage() {
-  let variable= process.env.NEXT_PUBLIC_local
+  let variable= process.env.NEXT_PUBLIC_BASE_URL
   const getProd = async () => {
     const res = await fetch(`${variable}/api`, {
       next: { revalidate: 10 },
