@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Card from "../components/Card";
 
 export default async function AboutPage() {
@@ -13,16 +14,16 @@ export default async function AboutPage() {
   const data = await getProd();
   return (
     <div className="min-h-screen">
-      {data ? (
+      <Suspense fallback={<>Loading...</>}>
+      {data && (
         <div className="grid grid-cols-3 gap-2 pt-8">
           {data?.message}
           {data?.products?.map((item, ind) => (
             <Card key={ind} product={item} />
           ))}
         </div>
-      ) : (
-        "loading"
       )}
+      </Suspense>
     </div>
   );
 }
